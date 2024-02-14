@@ -1,0 +1,90 @@
+
+/* Responsive Row CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 92%;
+    margin: 55px auto;
+}
+h1{
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+
+  
+  
+}
+
+.col{
+    border: 2px solid #111010;  
+    background-color: #c2b9b9;
+    padding: 0;
+  
+    
+}
+.col h2{
+    width: 100px;
+    font-size: 22px;
+    float: right;
+    margin-right: 0;
+    border: 2px solid #111010;
+    background-color:burlywood ;
+    padding: 12px;
+
+}
+.col p{
+    clear: right;
+    margin: 12px;
+}
+.col:nth-child(1) h2{
+   
+    background-color:burlywood ;
+}
+.col:nth-child(2) h2{
+   
+    background-color:rgb(220, 121, 8) ;
+}
+.col:nth-child(3) h2{
+   
+    background-color:rgba(219, 201, 88, 0.754) ;
+}
+
+
+
+/* Responsive Column CSS */
+/* Extra Small Devices (phones, less than 576px) */
+@media (max-width: 576px){
+    .col-sm-12 {
+     width: 100%;
+    }
+}
+
+/* Small Devices (portrait tablets and small desktops, 576px and up) */
+@media (min-width: 576px) and (max-width:768) {
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* Medium Devices (landscape tablets and medium desktops, 768px and up) */
+@media (min-width: 768px) {
+  .col-lg-4 {
+    width: 33.33%;
+  }
+}
+
+/* Large Devices (large desktops, 992px and up) */
+
+
